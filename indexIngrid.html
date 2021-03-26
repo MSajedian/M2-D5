@@ -21,6 +21,9 @@
         font-family: "Open Sans", sans-serif;
         background: #222222;
       }
+      .btn-without-outline{
+        border: none;
+      }
     </style>
 
     <title>NETFLIX</title>
@@ -57,13 +60,13 @@
         </div>
       </div>
       <form class="form-inline">
-        <input
+        <!-- <input
           class="form-control mr-sm-2"
           type="search"
           aria-label="Search"
           style="background-color: #151515"
-        />
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+        /> -->
+        <button class="btn btn-outline-light btn-without-outline my-2 my-sm-0" type="submit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -78,6 +81,15 @@
           </svg>
         </button>
       </form>
+
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">KIDS</a>
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+        </svg></a>
+      </div>
+
       <div class="dropdown">
         <button
           class="btn btn-transparent text-light dropdown-toggle"
@@ -87,7 +99,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          KIDS
+          <img src="media/usericon.png" alt="">
         </button>
         <!-- MSajedian -->
         <!-- https://getbootstrap.com/docs/4.6/components/dropdowns/ -->
