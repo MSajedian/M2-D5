@@ -30,7 +30,7 @@
 
       body {
         font-family: "Open Sans", sans-serif;
-        background: #222222;
+        background: #111;
       }
       .btn-without-outline {
         border: none;
@@ -43,6 +43,16 @@
       .col-xs-4 {
         flex: 0 0 auto;
       }
+      footer ul li {
+        color: #777;
+      }
+      .btn-color{
+        color: #999;
+        border: 1px solid white;
+      }
+      #TV-Shows{
+        display: inline;
+      }
     </style>
 
     <title>NETFLIX</title>
@@ -51,7 +61,7 @@
     <!-- Introducing navigation Bar #151515 -->
     <nav
       class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #222222"
+      style="background-color: #111"
     >
       <a class="navbar-brand" href="#">
         <img src="/media/netflix_logo.png" style="height: 50px" />
@@ -145,6 +155,27 @@
     </nav>
 
     <main class="container-fluid pl-5 pr-0">
+      <h3 class="mt-4 text-white mr-4" id="TV-Shows">TV Shows</h3>
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-color dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+        Genres
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Dram</a>
+          <a class="dropdown-item" href="#">something</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+
       <h3 class="mt-4 text-white">Trending Now</h3>
       <!-- row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 -->
       <div class="row no-gutters mb-4 testimonial-group">
@@ -197,14 +228,27 @@
     <footer>
       <div class="footer-logo"></div>
       <ul>
-        <a href="#"><li>Terms and Privacy Notice</li></a>
+        <a href="#"><li class="mb-3">Audio and Subtitles</li></a>
         <a href="#">
-          <li>Send us feedback</li>
+          <li class="mb-3">Media Center</li>
         </a>
-        <a href="#"><li>Help</li></a>
-        <li>© 1996-2020, Amazon.com, Inc. or its affiliates</li>
+        <a href="#"><li class="mb-3">Privacy</li></a>
+        <a href="#"><li class="mb-3">Contact Us</li></a>
+        <a href="#"><li class="mb-3">Audio Description</li></a>
+        <a href="#"><li class="mb-3">Inverstor Relations</li></a>
+        <a href="#"><li class="mb-3">Legal Notices</li></a>
+        <a href="#"><li class="mb-3">Help Center</li></a>
+        <a href="#"><li class="mb-3">Jobs</li></a>
+        <a href="#"><li class="mb-3">Cookie Prefrences</li></a>
+        <a href="#"><li class="mb-3">Gift Cards</li></a>
+        <a href="#"><li class="mb-3">Terms of Use</li></a>
+        <a href="#"><li class="mb-3">Corporate Information</li></a>
+
+        <li>© 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</li>
       </ul>
+      <button class="mb-3">Contact Us</button>
     </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
